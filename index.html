@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Checkout | Realize seu pagamento</title>
+
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSSs -->
+        <link rel="stylesheet" href="./assets/css/global.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/mobile.css" />
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <img src="./assets/img/logo.png" alt="Magalu" />
+        </header>
+
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                <!-- TITLE -->
+                <h1 class="title-main">
+                    CHECKEOUT
+                    <span>
+                        Por favor, confirme suas informações para concluir sua
+                        compra.
+                    </span>
+                </h1>
+
+                <!-- GRID SECTION -->
+                <div class="grid-section">
+                    <!-- ADDRESS -->
+                    <section>
+                        <h2 class="title-section">
+                            <span>1.</span> Seu endereço
+                        </h2>
+
+                        <div class="input-group">
+                            <label for="cep">CEP *</label>
+                            <input
+                                type="text"
+                                id="cep"
+                                maxlength="9"
+                                required
+                            />
+                        </div>
+
+                        <div class="multiple-input-content">
+                            <div class="input-group">
+                                <label for="street">Rua *</label>
+                                <input type="text" id="street" required />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="number">Número *</label>
+                                <input type="text" id="number" required />
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="complement">Complemento</label>
+                            <input type="text" id="complement" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="district">Bairro *</label>
+                            <input type="text" id="district" required />
+                        </div>
+
+                        <div class="multiple-input-content">
+                            <div class="input-group">
+                                <label for="city">Cidade *</label>
+                                <input type="text" id="city" required />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="state">Estado *</label>
+
+                                <select required id="state">
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RR">RR</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PAYMENT -->
+                    <section>
+                        <h2 class="title-section">
+                            <span>2.</span> Método de pagamento
+                        </h2>
+
+                        <div class="multiple-input-content">
+                            <div class="input-group">
+                                <label for="credit">Número do cartão *</label>
+                                <input
+                                    type="text"
+                                    id="credit"
+                                    maxlength="19"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="cvv">CVV *</label>
+                                <input
+                                    type="text"
+                                    id="cvv"
+                                    maxlength="3"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="date">Data de vencimento *</label>
+                            <input
+                                type="text"
+                                id="date"
+                                maxlength="7"
+                                required
+                            />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="cpf">CPF *</label>
+                            <input type="text" id="cpf" required />
+                        </div>
+                    </section>
+
+                    <!-- INFO PRODUCT -->
+                    <section id="product">
+                        <h2 class="title-section"><span>3.</span> Pedido</h2>
+
+                        <div>
+                            <div
+                                class="image-product"
+                                style="
+                                    background-image: url(./assets/img/jogo-de-cama-batman.jpg);
+                                "
+                            ></div>
+
+                            <div class="subtotal-product">
+                                <h3 class="title-subtotal">
+                                    1x Jogo de Cama do Batman
+                                </h3>
+
+                                <p class="price-subtotal">R$39,90</p>
+                            </div>
+                            <div class="subtotal-product">
+                                <h3 class="title-subtotal">
+                                    Frete (12 dias úteis)
+                                </h3>
+
+                                <p class="price-subtotal">R$15,00</p>
+                            </div>
+
+                            <div class="subtotal-product total-product">
+                                <h3 class="title-subtotal">Total a pagar</h3>
+
+                                <p class="price-subtotal">R$54,90</p>
+                            </div>
+                        </div>
+
+                        <button type="submit">ENVIAR</button>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script src="./assets/js/main.js"></script>
+</html>

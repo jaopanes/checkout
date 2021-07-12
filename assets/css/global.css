@@ -1,0 +1,112 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --blue: hsl(210, 100%, 53%);
+    --blue-dark: hsl(194, 50%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button,
+input::placeholder,
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+input,
+button,
+select {
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background-color: var(--white);
+}
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 30px;
+}
+
+section {
+    position: relative;
+}
+
+.title-section {
+    font-size: 1.25rem;
+    color: var(--blue-dark);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.title-section span {
+    font-size: 1.75rem;
+    color: var(--blue);
+    font-style: italic;
+    margin-right: 8px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    height: 50px;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 16px;
+    transition: box-shadow 0.2s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.multiple-input-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 8px;
+}
+
+button {
+    width: 100%;
+    height: 55px;
+    background-color: var(--blue);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}

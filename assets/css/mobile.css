@@ -1,0 +1,27 @@
+@media (max-width: 1110px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .multiple-input-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    main .grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    main .title-main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
